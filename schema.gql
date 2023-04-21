@@ -1,0 +1,46 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+directive @upper on FIELD_DEFINITION
+
+type Character {
+  _id: String!
+  name: String!
+  status: String!
+  species: String!
+  type: String!
+  gender: String!
+  origin: String!
+  location: String!
+  image: String!
+  episode: [String!]!
+  created: String!
+}
+
+type Episode {
+  _id: String!
+  name: String!
+  air_date: String!
+  episode: String!
+  characters: [String!]!
+  created: String!
+}
+
+type Location {
+  _id: String!
+  name: String!
+  type: String!
+  dimension: String!
+  residents: [String!]!
+  created: String!
+}
+
+type Query {
+  character(id: String!): Character!
+  characters(page: Float!): [Character!]!
+  episode(id: String!): Episode!
+  episodes(skip: Int! = 0, take: Int! = 25): [Episode!]!
+  location(id: String!): Location!
+  locations(skip: Int! = 0, take: Int! = 25): [Location!]!
+}
