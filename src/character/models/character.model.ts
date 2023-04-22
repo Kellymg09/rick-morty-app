@@ -8,7 +8,7 @@ import { Location } from 'src/location/models/location.model';
 export class Character {
   @Field(() => String)
   _id: MongooseSchema.Types.ObjectId;
-  
+
   @Prop()
   @Field()
   name: string;

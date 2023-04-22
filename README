@@ -7,6 +7,24 @@ npm run seed
 # Write your query or mutation h
 {
   character(id:"5d299c853d1d85c017cc3e01"){
-  	name
+  	_id,
+  name,
+  status,
+  species,
+  type,
+  gender,
+  origin,
+  location,
+  image,
+  episode,
+  created
+	}
+}
+
+
+# Write your query or mutation h
+{
+  characters(page: 0){
+    name
 	}
 }

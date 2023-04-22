@@ -5,7 +5,7 @@ import { CharacterService } from './character.service';
 
 @Resolver(of => Character)
 export class CharacterResolver {
-  constructor(private readonly characterService: CharacterService) {}
+  constructor(private readonly characterService: CharacterService) { }
 
   @Query(returns => Character)
   async character(@Args('id') id: string): Promise<Character> {

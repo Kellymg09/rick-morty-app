@@ -10,7 +10,7 @@ import { LocationSeeder } from './location/location.seeder';
 
 seeder({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost/rick-morty-db'),
+    MongooseModule.forRoot('mongodb://localhost/rickandmorty-kelly'),
     MongooseModule.forFeature([
       { name: Character.name, schema: CharacterSchema },
       { name: Episode.name, schema: EpisodeSchema },

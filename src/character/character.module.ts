@@ -15,4 +15,4 @@ import { Character, CharacterSchema } from './models/character.model';
   ],
   providers: [CharacterResolver, CharacterService],
 })
-export class CharacterModule {}
+export class CharacterModule { }
